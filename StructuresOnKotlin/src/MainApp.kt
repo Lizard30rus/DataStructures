@@ -19,6 +19,8 @@ fun main (args: Array<String>)
     arr.display()
     println("and again!")
     arr.display()
+    println("and again!!!!!!!Блять")
+    arr.display()
 
 
 
