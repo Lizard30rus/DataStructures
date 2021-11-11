@@ -17,6 +17,9 @@ fun main (args: Array<String>)
     println("////////////////////////////////////////")
     arr.selectSort()
     arr.display()
+    println("and again!")
+    arr.display()
+
 
 
 }
