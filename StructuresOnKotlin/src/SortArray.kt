@@ -31,6 +31,7 @@ class SortArray (size : Int) {
         }
     }
 
+    //ВЫБОРОМ БЛЯТЬ!
     fun selectSort()
     {
         var min : Int
@@ -44,6 +45,22 @@ class SortArray (size : Int) {
         }
     }
 
+    //СОРТИРОВКА МЕТОДОМ ВСТАВКИ
+    fun insertSort()
+    {
+        var ins : Int
+        for (out in 1 until nelms)
+        {
+            var temp  = array[out]
+            ins = out
+            while (ins > 0 && array[ins - 1] >= temp)
+            {
+                array[ins] = array[ins-1]
+                --ins
+            }
+            array[ins] = temp
+        }
+    }
     private fun swap(one : Int, two : Int)
     {
         var temp = array[one]
