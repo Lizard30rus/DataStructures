@@ -46,6 +46,9 @@ class SortArray (size : Int) {
     }
 
     //СОРТИРОВКА МЕТОДОМ ВСТАВКИ
+
+
+
     fun insertSort()
     {
         var ins : Int
