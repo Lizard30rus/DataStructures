@@ -9,6 +9,7 @@ fun main (args: Array<String>)
     {
         stackarray.push(count.toLong())
         count += 6
+        println(stackarray.peek())
     }
     println(stackarray.isEmpty())
     println(stackarray.isFull())
