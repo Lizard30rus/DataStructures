@@ -1,6 +1,6 @@
-class StackX(val maxSize: Int) {
+class StackXLong(private val maxSize: Int) {
     //РЕАЛИЗАЦИЯ СТРУКТУРЫ ДАННЫХ СТЕК НА БАЗЕ МАССИВА
-    private  val stackArray = LongArray(maxSize)
+    private val stackArray = LongArray(maxSize)
     private var top = -1
 
     fun push(j : Long){
