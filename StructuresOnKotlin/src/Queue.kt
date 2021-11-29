@@ -7,7 +7,7 @@ class Queue(private val size:Int) {
 
     fun  insert(j:Long)
     {
-        
+
         if (rear == maxSize - 1)
             rear = -1
         queArray[++rear] = j
