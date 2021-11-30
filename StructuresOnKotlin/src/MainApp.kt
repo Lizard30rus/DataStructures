@@ -8,7 +8,7 @@ fun main (args: Array<String>)
     //brchek.check()
 
     val prq: priorityQ = priorityQ(8)
-
+/*
     prq.insert(900)
 
     prq.insert(30)
@@ -24,7 +24,17 @@ fun main (args: Array<String>)
     prq.insert(12)
     prq.insert(16)
 
-    prq.removeAll()
+    prq.remove( )
+
+ */
+
+    var Sum = 0
+    var oneNightIn113 = 2200
+    for (i in 0 .. 10)
+    {
+        Sum = oneNightIn113 + (oneNightIn113*i - 300*i)
+        println(Sum)
+    }
 
 
 }
