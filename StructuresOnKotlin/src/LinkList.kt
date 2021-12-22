@@ -2,8 +2,7 @@ class LinkList(private var first:Link? = null) {
 
     fun insertFirst(i:Int, d:Double)
     {
-
-      var newLink:Link = Link(i,d)
+      val newLink = Link(i,d)
       newLink.next = first
         first = newLink
     }
@@ -32,8 +31,46 @@ class LinkList(private var first:Link? = null) {
         first?.next?.display()
     }
 
+    fun findByKey(i:Int):Link?
+    {
+        val current:Link? = first
+        while (current?.getiData() != i)
+        {
+            if (current?.next == null)
+            {
+                println("findByKey совпадений не найдено")
+                return current
+            }
+            current.next = current
+        }
+        return current
+    }
 
-
+    fun deleteByKey(i:Int):Link?
+    {
+        val current:Link? = first
+        var previous:Link? = first
+        while (current?.getiData() != i)
+        {
+            if (current?.next == null)
+            {
+                println("deleteByKey совпадений не найдено")
+                return current
+            }
+            previous = current
+            current.next = current
+        }
+        return if (current == first)
+        {
+            first = first?.next
+            current
+        }
+        else
+        {
+            previous?.next= current.next
+            current
+        }
+    }
 
     fun isEmpty() = first == null
 
