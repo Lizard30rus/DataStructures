@@ -24,7 +24,7 @@ class LinkList(private var first:Link? = null) {
         }
         println()
     }
-
+/*
     fun displayThis(){
         first?.display()
         println("/////")
@@ -71,6 +71,8 @@ class LinkList(private var first:Link? = null) {
             current
         }
     }
+
+ */
 
     fun isEmpty() = first == null
 

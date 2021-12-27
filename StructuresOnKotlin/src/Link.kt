@@ -1,4 +1,4 @@
-class Link(private val iData: Int, private val dData:Double, public var next: Link? = null) {
+class Link(private val iData: Int, private val dData:Double, var next: Link? = null) {
 
     fun display()
     {
@@ -6,5 +6,6 @@ class Link(private val iData: Int, private val dData:Double, public var next: Li
     }
 
     fun getiData() = iData
+    fun getdData() = dData
 
 }

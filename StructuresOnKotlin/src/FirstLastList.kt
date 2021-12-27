@@ -1,7 +1,7 @@
 class FirstLastList(private var first:Link?, private var last:Link?) {
 
     fun isEmpty() = first == null
-
+/*
     fun insertFirst(i:Int, d:Double)
     {
         val newLink = Link(i,d)
@@ -11,9 +11,11 @@ class FirstLastList(private var first:Link?, private var last:Link?) {
         first = newLink
     }
 
+ */
+
     fun insertLast(i:Int, d:Double)
     {
-        var newLink:Link = Link(i,d)
+        val newLink = Link(i,d)
         if (isEmpty())
         {
             first = newLink
@@ -43,7 +45,4 @@ class FirstLastList(private var first:Link?, private var last:Link?) {
         }
         println()
     }
-
-
-
 }
